@@ -1,0 +1,22 @@
+body {}
+
+.pinkHandDown-icon {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    cursor: grab;
+    user-select: none;
+    transform: translate(-100%, 0);
+}
+
+.pinkHandDown-icon img {
+    width: 150px;
+    height: auto;
+}
+
+
+.pinkHandDown-icon img {
+    width: 150px;
+    height: auto;
+}
+

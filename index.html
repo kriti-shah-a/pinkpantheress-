@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="pinkHandDown-icon">
+        <img src ="img/pinkHandDown.png" alt="Pink Hand Down">
+    </div>
+    <script>
+        const pinkIcon = document.querySelector('.pinkHandDown-icon');
+        const img = pinkIcon.querySelector('img'); 
+        dragElement(pinkIcon);
+
+        function dragElement(elmnt){
+            elmnt.addEventListener("mousedown", mouseDown);
+
+            function mouseDown(e) {
+                e.preventDefault();
+                img.src = "img/pinkHandUp.png";
+                img.style.width = "100px";
+                img.style.height = "auto";
+                document.addEventListener("mouseup", mouseUp);
+                document.addEventListener("mousemove", mouseMove);
+            }
+
+            function mouseMove(e){
+                e.preventDefault();
+                elmnt.style.left = e.clientX+'px';
+                elmnt.style.top = e.clientY+'px';
+
+            }
+
+            function mouseUp(){
+                elmnt.style.color = "black";
+                document.removeEventListener("mousemove", mouseMove);
+                document.removeEventListener("mouseup", mouseUp);
+                img.src = "img/pinkHandDown.png";
+            }
+
+        }
+    </script>
+</body>
+</html>
