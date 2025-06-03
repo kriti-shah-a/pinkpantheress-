@@ -17,11 +17,11 @@ This project replicates that playful vibe using an interactive draggable image. 
 - CSS styling for smooth visuals
 - Includes a video background
 
-### 🚀 How to Use
+### How to Use
 
 Just open `index.html` in your browser — then click and drag the hand!
 
-### 🖼 Credits
+### Credits
 Hand art: Inspiration from Emmzonn 
 Trend: All credit to the creative TikTok community and the amazing sound by PinkPantheress
 
