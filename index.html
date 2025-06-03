@@ -8,6 +8,11 @@
     
 </head>
 <body>
+    <video class="video-bg" autoplay muted loop>
+        <source src="video/hand.mp4" type="video/mp4">
+      
+        <source src="img/bgVideo.mp4" type="video/mp4">
+    </video>
     <div class="pinkHandDown-icon">
         <img src ="img/pinkHandDown.png" alt="Pink Hand Down">
     </div>
@@ -22,7 +27,7 @@
             function mouseDown(e) {
                 e.preventDefault();
                 img.src = "img/pinkHandUp.png";
-                img.style.width = "100px";
+                img.style.width = "170px";
                 img.style.height = "auto";
                 document.addEventListener("mouseup", mouseUp);
                 document.addEventListener("mousemove", mouseMove);
@@ -40,6 +45,8 @@
                 document.removeEventListener("mousemove", mouseMove);
                 document.removeEventListener("mouseup", mouseUp);
                 img.src = "img/pinkHandDown.png";
+                img.style.width = "170px";
+                img.style.height = "auto";
             }
 
         }

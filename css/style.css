@@ -1,4 +1,6 @@
-body {}
+body {
+    overflow: hidden;
+}
 
 .pinkHandDown-icon {
     position: absolute;
@@ -10,13 +12,16 @@ body {}
 }
 
 .pinkHandDown-icon img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
 
-.pinkHandDown-icon img {
-    width: 150px;
-    height: auto;
+.video-bg{
+    position: absolute;
+    top: -70px;  
+    bottom:0;
+    left: -1px;
+    min-width: 100%;
+    min-height: 100%;
 }
-
